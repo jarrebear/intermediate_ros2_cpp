@@ -18,10 +18,19 @@ ament_target_dependencies(move_robot_exe
   geometry_msgs
 )
 
+# Add the executable
+add_executable(move_robot_with_arguments_exe src/move_robot_with_arguments.cpp)
+
+ament_target_dependencies(move_robot_with_arguments_exe
+  rclcpp
+  geometry_msgs
+)
+
 
 # Install the executable
 install(TARGETS
   move_robot_exe
+  move_robot_with_arguments_exe
   DESTINATION lib/${PROJECT_NAME}
 )
 
