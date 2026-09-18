@@ -1,7 +1,5 @@
-#include "nav_msgs/msg/detail/odometry__struct.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/detail/laser_scan__struct.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 
 #include <functional>

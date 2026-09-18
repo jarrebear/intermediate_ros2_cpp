@@ -1,0 +1,5 @@
+/robot_sensor_node:
+  ros__parameters:
+    get_laser_data: true
+    get_odom_data: false
+
