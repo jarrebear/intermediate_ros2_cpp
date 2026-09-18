@@ -23,9 +23,13 @@ ament_target_dependencies(laser_odom_node
   nav_msgs
 )
 
+add_executable(param_tests_callback_node src/parameter_tests_callback.cpp)
+ament_target_dependencies(param_tests_callback_node rclcpp geometry_msgs rcl_interfaces)
+
 install(TARGETS
   param_tests_node
   laser_odom_node
+  param_tests_callback_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
