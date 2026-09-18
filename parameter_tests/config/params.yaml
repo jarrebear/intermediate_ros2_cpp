@@ -1,0 +1,7 @@
+/move_robot_node:
+  ros__parameters:
+    angular_speed: 0.0
+    linear_speed: 0.0
+    publish_rate: 1.0
+    use_sim_time: false
+
